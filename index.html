@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="de"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lilly Beilmann — Industrial Design</title>
+<link rel="stylesheet" href="style.css">
+
+<!--
+  ══════════════════════════════════════════════════════════════
+  WIE DU HIER TEXTE ÄNDERST  (aufgeräumte Version)
+  ══════════════════════════════════════════════════════════════
+  Ab jetzt steht in dieser Datei fast NUR noch Text.
+  Das gesamte Aussehen liegt in "style.css" (über class="...").
+
+  So änderst du einen Text:
+    <p class="fl-body">Dieser Text hier ist sichtbar.</p>
+    Ersetze einfach den Text zwischen > und </p>.
+
+  Regeln:
+    1. Fass die spitzen Klammern <...> und </...> nicht an.
+    2. Lass class="..." unverändert stehen.
+
+  ZWEISPRACHIGKEIT (DE/EN):
+    Der englische Text steht jeweils im Attribut data-en="...".
+    Deutsch ist der Text zwischen den Tags. Der DE/EN-Schalter
+    oben rechts tauscht beides live (siehe script.js → setLang).
+    Am einfachsten bearbeitest du beide Sprachen im Portfolio-Studio.
+-->
+</head>
+<body>
+
+<div id="cursor"></div>
+
+<!-- ═══════════════ NAVIGATION (oben) ═══════════════ -->
+<nav>
+  <a class="nav-logo" href="#">L. Beilmann</a>
+  <div class="nav-links">
+    <a href="#projekte" data-en="Projects">Projekte</a>
+    <a href="#about" data-en="About">Über mich</a>
+    <a href="mailto:lilly.beilmann@web.de" data-en="Contact">Kontakt</a>
+    <span class="lang-switch">
+      <button type="button" data-lang="de" class="active">DE</button>
+      <span class="sep">/</span>
+      <button type="button" data-lang="en">EN</button>
+    </span>
+  </div>
+</nav>
+
+<!-- ═══════════════ HERO / STARTBILD ═══════════════ -->
+<section class="hero" id="hero">
+  <div class="hero-bg"><img src="images/DSC04338.JPG" alt="Titelbild" class="st-87vz1"></div>
+  <div class="hero-shade"></div>
+
+  <div class="hero-counter">Portfolio · 2025 / 2026</div>
+
+  <h1 class="hero-name" aria-label="Lilly Beilmann">
+    <span class="hero-name-first">Lilly</span>
+    <span class="hero-name-last">Beilmann</span>
+  </h1>
+
+  <div class="hero-meta">
+    <div class="hero-desc" data-en="&lt;span&gt;Industrial Design&lt;/span&gt; Folkwang University of the Arts&lt;br&gt;Product · Space · Surface">
+      <span>Industrial Design</span>
+      Folkwang Universität der Künste<br>
+      Produkt · Raum · Oberfläche
+    </div>
+    <div class="hero-scroll" data-en="&lt;span class=&quot;hero-scroll-line&quot;&gt;&lt;/span&gt; Scroll">
+      <span class="hero-scroll-line"></span>
+      Scrollen
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ PROJEKTLISTE ═══════════════ -->
+<div class="divider" data-animate="divider"></div>
+
+<section class="projects" id="projekte">
+  <p class="section-label txt-c-accent" data-animate="fadeUp" data-en="Selected Work">Ausgewählte Projekte</p>
+
+  <!-- Projekt 1 -->
+  <div class="project-row" data-project="0" data-delay="0">
+    <span class="project-num">01</span>
+    <div class="project-center">
+      <span class="project-name">KOMMSE ÜCKEN?!</span>
+      <div class="project-sub">
+        <span data-en="App Interface · UX/UI Design">App Interface · UX/UI Design</span>
+        <span class="project-sub-tag">Figma</span>
+      </div>
+    </div>
+    <div class="project-right">
+      <span class="project-year">2025</span>
+      <span class="project-arrow">→</span>
+    </div>
+  </div>
+
+  <!-- Projekt 2 -->
+  <div class="project-row" data-project="1" data-delay="100">
+    <span class="project-num">02</span>
+    <div class="project-center">
+      <span class="project-name">FELTEDLOCKS</span>
+      <div class="project-sub">
+        <span data-en="Natural Dread Soap · Product Design">Natural Dread Soap · Produktgestaltung</span>
+        <span class="project-sub-tag">Branding</span>
+        <span class="project-sub-tag" data-en="Craft">Handwerk</span>
+      </div>
+    </div>
+    <div class="project-right">
+      <span class="project-year">2025</span>
+      <span class="project-arrow">→</span>
+    </div>
+  </div>
+
+  <!-- Projekt 3 -->
+  <div class="project-row" data-project="2" data-delay="200">
+    <span class="project-num">03</span>
+    <div class="project-center">
+      <span class="project-name">QUICK and DIRTY</span>
+      <div class="project-sub">
+        <span data-en="Latex Outfit · Material Design">Latex-Outfit · Materialdesign</span>
+        <span class="project-sub-tag" data-en="Handcraft">Handarbeit</span>
+        <span class="project-sub-tag">Material</span>
+      </div>
+    </div>
+    <div class="project-right">
+      <span class="project-year">2026</span>
+      <span class="project-arrow">→</span>
+    </div>
+  </div>
+
+  <!-- Projekt 4 -->
+  <div class="project-row" data-project="3" data-delay="300">
+    <span class="project-num">04</span>
+    <div class="project-center">
+      <span class="project-name">RUNDGANG 2026</span>
+      <div class="project-sub">
+        <span data-en="Annual Exhibition · Organisation &amp; Curation">Jahresausstellung · Organisation &amp; Kuratierung</span>
+        <span class="project-sub-tag" data-en="Open Call">Open Call</span>
+        <span class="project-sub-tag" data-en="Event">Event</span>
+      </div>
+    </div>
+    <div class="project-right">
+      <span class="project-year">2026</span>
+      <span class="project-arrow">→</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ ÜBER MICH ═══════════════ -->
+<div class="divider" data-animate="divider"></div>
+
+<section class="about" id="about">
+  <h2 class="about-headline" data-animate="fadeUp" data-en="Design is&lt;br&gt;&lt;em&gt;thinking&lt;/em&gt;you can touch.">
+    Design ist<br>
+    <em>Denken</em>
+    das man anfassen kann.
+  </h2>
+  <div class="about-text" data-animate="fadeUp">
+    <p data-en="I'm &lt;strong&gt;Lilly Beilmann&lt;/strong&gt;, a fourth-semester Industrial Design student at the Folkwang University of the Arts. Product design fascinates me where innovation meets care — in objects that not only work and look good, but feel right in every detail." class="txt-c-cream">Ich bin <strong>Lilly Beilmann</strong>, Studentin des Industrial Designs im vierten Semester an der Folkwang Universität der Künste. Produktdesign fasziniert mich dort, wo Innovation auf Sorgfalt trifft – bei Objekten, die nicht nur funktionieren und gut aussehen, sondern sich durch jedes Detail richtig anfühlen.</p>
+    <p class="txt-c-cream" data-en="What drives me are the decisions you don&#x27;t see at first glance: ergonomic proportions, haptic quality, optimal comfort of use — but also the small artistic details. From the first sketch to the final prototype I work independently and consistently — reliability and real teamwork are not a given for me, but an attitude.">Was mich antreibt, sind die Entscheidungen, die man nicht sofort sieht: ergonomische Proportionen, haptische Qualität, optimaler Nutzungskomfort aber eben auch die kleinen künstlerischen Details. Von der ersten Skizze bis zum finalen Prototyp arbeite ich selbstständig und konsequent – Verlässlichkeit und echte Teamarbeit sind für mich dabei keine Selbstverständlichkeit, sondern Haltung.</p>
+    <div class="skills-grid">
+      <div class="skill-item txt-c-light">Rhino 3D</div><div class="skill-item txt-c-light">figma</div>
+      <div class="skill-item txt-c-light">SolidWorks</div>
+      <div class="skill-item txt-c-light">Adobe</div>
+      <div class="skill-item txt-c-light">blender</div>
+      <div class="skill-item txt-c-light">Illustrator</div>
+      <div class="skill-item txt-c-light">VS Studio</div>
+      <div class="skill-item txt-c-light">Photoshop</div>
+      <div class="skill-item"></div>
+      <div class="skill-item txt-c-light">InDesign</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ FOOTER ═══════════════ -->
+<footer class="footer">
+  <div class="footer-left">
+    <a class="footer-contact" href="mailto:lilly.beilmann@web.de">
+      lilly.beilmann@web.de
+    </a>
+    <a class="footer-insta" href="https://www.instagram.com/growtoutopia/" target="_blank" rel="noopener">
+      @growtoutopia
+    </a>
+  </div>
+  <div class="footer-right">
+    <div data-en="Industrial Design&lt;br&gt;Folkwang University of the Arts&lt;br&gt;Essen, 2026">
+      Industrial Design<br>
+      Folkwang Universität der Künste<br>
+      Essen, 2026
+    </div>
+    <div class="footer-legal"><a href="impressum.html" data-en="Legal notice">Impressum</a> · <a href="datenschutz.html" data-en="Privacy">Datenschutz</a></div>
+  </div>
+</footer>
+
+<!-- Projekt-Detailansicht (Overlay), wird per Klick befüllt -->
+<div class="overlay" id="overlay" role="dialog" aria-modal="true">
+  <button class="overlay-close" id="overlayClose" data-en="× Close">× Schließen</button>
+  <div class="overlay-inner" id="overlayInner"></div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════════════════
+     PROJEKT-DETAILSEITEN
+     Deutsch = Text zwischen den Tags, Englisch = data-en="...".
+     ══════════════════════════════════════════════════════════ -->
+
+<!-- ─── PROJEKT 01: KOMMSE ÜCKEN?! ─── -->
+<template id="overlay-0">
+
+  <!-- Titelbild -->
+  <div class="cs-hero ku-hero st-7yryz">
+    <div class="qd-hero-shade"></div>
+    <span class="cs-tag ku-tag" data-en="Project 01">Projekt 01</span>
+    <div class="qd-hero-caption">
+      <div>
+        <div class="qd-hero-eyebrow txt-c-muted" data-en="01 — App Design">01 — App-Design</div>
+        <h2 class="qd-hero-title">Kommse<br><em>Ücken?!</em></h2>
+        <p class="qd-hero-sub" data-en="An orientation app for the subcultural event series on Bochumer Straße in Gelsenkirchen-Ückendorf.">Eine Orientierungs-App für die subkulturelle Eventreihe auf der Bochumer Straße in Gelsenkirchen-Ückendorf.</p>
+      </div>
+      <div class="qd-hero-side">
+        <div class="qd-hero-side-line" data-en="UX/UI Design · Mobile App">UX/UI Design · Mobile App</div>
+        <div class="qd-hero-side-line2" data-en="Figma prototype">Figma-Klickdummy</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Einleitung + Eckdaten -->
+  <div class="ku-intro">
+    <div>
+      <div class="txt-abschnitte txt-c-accent" data-en="Context">Kontext</div>
+      <p class="cs-lead txt-c-cream" data-en="Through my job in the local gastronomy scene on Bochumer Straße I was part of this event myself — close to the planning, the setup and the special spirit of the neighbourhood. When I took an app-design course, I picked up on that experience and independently developed a mobile app for visitors.">Durch meinen Gastronomiejob auf der Bochumer Straße war ich selbst Teil dieses Events – nah an Planung, Aufbau und dem besonderen Geist des Viertels. Als ich einen App-Design-Kurs belegte, griff ich dieses Erlebnis auf und entwickelte eigenständig eine mobile App für Besucher:innen.</p>
+      <p class="ku-intro-body" data-en="In 2022 the Insane Urban Cowboys e.V. launched the quarterly event series &lt;em&gt;Kommste Ücken&lt;/em&gt; on Bochumer Straße — subcultural, authentic and free of charge.">2022 initiierte der Insane Urban Cowboys e.V. die quartalsweise stattfindende Eventreihe <em>Kommste Ücken</em> auf der Bochumer Straße — subkulturell, authentisch und kostenlos.</p>
+      <p class="ku-intro-body-muted txt-c-cream" data-en="A stirring concert in the pub, a DJ in front of the chip shop, a techno rave in an empty bunker. The neighbourhood is taken exactly as it is. My aim was to give visitors real orientation — to get to know the area and its growing event locations and pubs anew, spontaneously and casually, and to create a genuine connection to the district and the life within it.">In der Kneipe ein mitreißendes Konzert, vor der Pommesbude ein DJ, im leerstehenden Bunker ein Techno-Rave. Das Viertel wird so genommen wie es ist. Mein Ziel war es, den Besucher:innen echte Orientierung zu geben — die Nachbarschaft und die darin wachsenden Eventlocations und Kneipen neu kennenzulernen, spontan und ungezwungen, um eine echte Verbindung zum Viertel und dem Leben darin zu schaffen.</p>
+    </div>
+    <div class="ku-meta">
+      <div class="ku-meta-row">
+        <div class="txt-abschnitte txt-c-accent" data-en="Category">Kategorie</div>
+        <div class="ku-meta-value" data-en="UX/UI Design · Mobile App">UX/UI Design · Mobile App</div>
+      </div>
+      <div class="ku-meta-row">
+        <div class="txt-abschnitte txt-c-accent">Tools</div>
+        <div class="ku-meta-value">Figma</div>
+      </div>
+      <div class="ku-meta-row">
+        <div class="txt-abschnitte txt-c-accent" data-en="Context">Kontext</div>
+        <div class="ku-meta-value" data-en="Kommste Ücken event series, Bochumer Str., GE-Ückendorf">Eventreihe Kommste Ücken, Bochumer Str., GE-Ückendorf</div>
+      </div>
+      <div class="ku-meta-row">
+        <div class="txt-abschnitte txt-c-accent" data-en="Course lead">Kursleitung</div>
+        <div class="ku-meta-value" data-en="Christin Heinze">Christin Heinze</div>
+      </div>
+      <div class="ku-meta-row">
+        <div class="txt-abschnitte txt-c-accent" data-en="Scope">Umfang</div>
+        <div class="ku-meta-value" data-en="14 locations · Programme · Map · Gallery · Instagram">14 Locations · Programm · Karte · Galerie · Instagram</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Zitat + Designziel -->
+  <div class="ku-goal">
+    <p class="ku-goal-quote" data-en="»Visibility doesn't begin with the event — but with being able to find it.«">»Sichtbarkeit beginnt nicht mit dem Event — sondern damit, dass man es findet.«</p>
+    <div>
+      <div class="ku-goal-label txt-c-accent" data-en="Design goal">Designziel</div>
+      <div class="ku-goal-text txt-c-cream" data-en="Create orientation and access to the individual locations and provide an overview of the programme. Increase the visibility of the smaller pubs. Strengthen the connections between the pubs and the going-out culture.">Orientierung und Zugänglichkeit zu den einzelnen Lokationen schaffen und eine Übersicht der Programmabläufe bieten. Sichtbarkeit der kleineren Kneipen erhöhen. Verbindungen der Kneipen und Ausgehkultur stärken.</div>
+    </div>
+  </div>
+
+  <!-- Impressionen (Bilder-Galerie, per Skript befüllt) -->
+  <div class="ku-gallery">
+    <div class="ku-gallery-head">
+      <div class="ku-gallery-title txt-c-accent" data-en="Impressions">Impressionen</div>
+      <div id="ku-counter" class="ku-gallery-counter">1 / 17</div>
+    </div>
+    <div class="ku-gallery-viewport">
+      <div id="ku-track" class="ku-track"></div>
+      <button onclick="kuPrev()" class="ku-gallery-btn ku-gallery-btn-prev">←</button>
+      <button onclick="kuNext()" class="ku-gallery-btn ku-gallery-btn-next">→</button>
+    </div>
+  </div>
+
+  <!-- Gestaltungsentscheidungen + Lernmomente -->
+  <div class="ku-decisions">
+    <div class="ku-decisions-cell">
+      <div class="ku-decisions-label txt-c-accent" data-en="Design decisions">Gestaltungsentscheidungen</div>
+      <p class="ku-decisions-lead" data-en="The app had to work without onboarding — with a map for orientation and a directly linked programme overview, location details and their concept just one tap away.">Die App sollte ohne Onboarding funktionieren — mit Karte als Orientierung und einer direkt verknüpften Programmübersicht, Location-Details und deren Konzept einen Tap entfernt.</p>
+      <p class="ku-decisions-body txt-c-cream" data-en="Dark colour scheme for night-time use. Minimal navigation. Each location gets its own page with programme, address and atmosphere, plus a direct social-media link.">Dunkles Farbschema für den Nachteinsatz. Minimale Navigation. Jede Location bekommt eine eigene Seite mit Programm, Adresse und Atmosphäre sowie einer direkten Social-Media-Verlinkung.</p>
+    </div>
+    <div class="ku-decisions-cell">
+      <div class="ku-decisions-label txt-c-accent" data-en="Lessons learned">Lernmomente</div>
+      <p class="ku-decisions-lead" data-en="Designing for a real context that I know myself fundamentally changes the quality of the decisions — for the better.">Das Designen für einen realen Kontext, den ich selbst kenne, verändert die Qualität der Entscheidungen grundlegend — zum Besseren.</p>
+      <p class="ku-decisions-body txt-c-cream" data-en="Less is more — three iterations of the prototype showed: the more reduced the interaction, the more intuitive the use in tight spaces, in poor light or after a beer or two. The full potential is yet to be tapped — I&#x27;m looking forward to developing it further in cooperation with the Insane Urban Cowboys e.V.">Weniger ist mehr — drei Iterationen des Prototyps haben gezeigt: je reduzierter die Interaktion, desto intuitiver die Nutzung auf engstem Raum, bei schlechtem Licht oder nach ein, zwei Bierchen. Das volle Potential muss erst noch ausgeschöpft werden — ich freue mich auf eine weitere Ausarbeitung in Kooperation mit den Insane Urban Cowboys e.V.</p>
+    </div>
+  </div>
+
+  <!-- Credit-Zeile -->
+  <div class="ku-credit">
+    <div class="ku-credit-left">KOMMSE ÜCKEN?! · 2024 – 2026</div>
+    <div class="ku-credit-right" data-en="Folkwang University of the Arts">Folkwang Universität der Künste</div>
+  </div>
+
+  <!-- Interaktiver Klickdummy (Figma) -->
+  <div class="ku-proto">
+    <div class="ku-proto-head">
+      <div class="ku-proto-label txt-c-accent" data-en="Interactive prototype">Interaktiver Klickdummy</div>
+      <div class="ku-proto-hint" data-en="All flows are navigable — click your way through.">Alle Flows sind navigierbar — klicke dich durch.</div>
+    </div>
+    <div class="consent-embed" data-provider="Figma"><iframe class="ku-proto-frame" data-src="https://www.figma.com/embed?embed_host=share&amp;url=https://www.figma.com/proto/g7NyJObJvCdfyOetR1mTdJ/kommste-%C3%BCcken-design-sheet?node-id=44-7263&amp;p=f&amp;viewport=243%2C216%2C0.07&amp;t=YCOWyBcdy5bMENaT-1&amp;scaling=scale-down&amp;content-scaling=fixed&amp;starting-point-node-id=44%3A7263&amp;page-id=0%3A1" allowfullscreen=""></iframe><div class="consent-ph"><div class="consent-ph-label">Figma</div><p class="consent-ph-text" data-en="This content is provided by Figma (Figma, Inc., USA). Loading it transfers data such as your IP address to the provider. More in the &lt;a href=&quot;datenschutz.html&quot; target=&quot;_blank&quot;&gt;privacy policy&lt;/a&gt;.">Dieser Inhalt wird von Figma (Figma, Inc., USA) bereitgestellt. Beim Laden werden Daten wie deine IP-Adresse an den Anbieter übertragen. Mehr dazu in der <a href="datenschutz.html" target="_blank">Datenschutzerklärung</a>.</p><button type="button" class="consent-load" data-en="Load content">Inhalt laden</button></div></div>
+  </div>
+</template>
+
+
+<!-- ─── PROJEKT 02: FELTEDLOCKS ─── -->
+<template id="overlay-1">
+
+  <!-- Titelbild -->
+  <div class="qd-hero fl-hero-v2">
+    <img class="qd-hero-img" src="images/img010.jpg" alt="FeltedLocks in Anwendung">
+    <div class="qd-hero-shade"></div>
+    <span class="cs-tag ku-tag" data-en="Project 02 · Cooperation with SAPO">Projekt 02 · Kooperation SAPO</span>
+    <div class="qd-hero-caption">
+      <div>
+        <div class="qd-hero-eyebrow txt-c-muted" data-en="02 — Cooperation SAPO">02 — Kooperation SAPO</div>
+        <h2 class="qd-hero-title">Felted<br><em>Locks</em></h2>
+        <p class="qd-hero-sub" data-en="Handmade natural soap for dreadlocks — from the recipe to the form to the packaging.">Handgemachte Naturseife für Dreadlocks — von der Rezeptur über die Form bis zur Verpackung.</p>
+      </div>
+      <div class="qd-hero-side">
+        <div class="qd-hero-side-line" data-en="Soap design · Branding">Seifendesign · Branding</div>
+        <div class="qd-hero-side-line2">2025</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Konzept + Eckdaten -->
+  <div class="fl-concept">
+    <div>
+      <div class="txt-abschnitte txt-c-accent" data-en="Concept">Konzept</div>
+      <p class="fl-concept-lead" data-en="A soap workshop with SAPO — approaching form through our own production.">Ein Seifen-Workshop mit SAPO — Formgestaltung über die eigene Produktion.</p>
+      <p class="txt-text txt-c-cream" data-en="FeltedLocks emerged from a cooperation with the company SAPO. In a joint soap workshop we approached form design through the manufacturing process itself: not only designing soap as a product, but producing it ourselves.">FeltedLocks entstand in Kooperation mit der Firma SAPO. In einem gemeinsamen Seifen-Workshop näherten wir uns der Formgestaltung über den Herstellungsprozess selbst: Seife nicht nur als Produkt zu entwerfen, sondern sie auch selbst herzustellen.</p>
+      <p class="txt-text txt-c-cream" data-en="Using the materials available to us at the university, we set up our own bar-soap production. We had designed and milled the press moulds for it beforehand — so the form of the soap emerged directly from the interplay of design, tooling and production, as a first approach to the form design of soaps. Building on this, FeltedLocks developed over the further course of the project.">Mit den Materialien, die uns an der Uni zur Verfügung standen, bauten wir eine eigene Stückseifen-Produktion auf. Die Pressformen dafür hatten wir zuvor entworfen und gefräst — so entstand die Form der Seife direkt aus dem Zusammenspiel von Entwurf, Werkzeug und Produktion, um eine erste Annäherung an die Formgestaltung von Seifen zu machen. Basierend darauf entstand im weiteren Verlauf FeltedLocks.</p>
+    </div>
+    <div class="fl-meta-col">
+      <div class="fl-meta">
+        <div class="fl-meta-row">
+          <span class="txt-abschnitte txt-c-accent" data-en="Context">Kontext</span>
+          <span class="fl-meta-value" data-en="University project · Cooperation with SAPO">Uni-Projekt · Kooperation SAPO</span>
+        </div>
+        <div class="fl-meta-row">
+          <span class="txt-abschnitte txt-c-accent" data-en="Course lead">Kursleitung</span>
+          <span class="fl-meta-value" data-en="Prof. Marion Digel">Prof. Marion Digel</span>
+        </div>
+        <div class="fl-meta-row">
+          <span class="txt-abschnitte txt-c-accent" data-en="Material">Material</span>
+          <span class="fl-meta-value" data-en="Coconut, castor &amp; olive oil · Lavender">Kokos-, Rizinus- &amp; Olivenöl · Lavendel</span>
+        </div>
+        <div class="fl-meta-row">
+          <span class="txt-abschnitte txt-c-accent" data-en="Packaging">Verpackung</span>
+          <span class="fl-meta-value" data-en="Slot-together kraft-cardboard box">Steckbare Kraftkarton-Box</span>
+        </div>
+        <div class="fl-meta-row">
+          <span class="txt-abschnitte txt-c-accent">Status</span>
+          <span class="fl-meta-value" data-en="Prototype made · Logo &amp; packaging finalised">Prototyp hergestellt · Logo &amp; Verpackung finalisiert</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Reflexion: Foto + Text -->
+  <div class="fl-reflect">
+    <div class="fl-reflect-media">
+      <img class="fl-reflect-img" src="images/img012.jpg" alt="FeltedLocks Seife">
+      <div class="fl-reflect-fade"></div>
+    </div>
+    <div class="fl-reflect-text">
+      <div class="txt-abschnitte txt-c-accent" data-en="Reflection">Reflexion</div>
+      <p class="fl-reflect-quote" data-en="»How multi-layered design is when different disciplines interlock.«">»Wie vielschichtig Design ist, wenn verschiedene Disziplinen ineinandergreifen.«</p>
+      <p class="txt-text txt-c-cream" data-en="The project gave me the chance to combine the chemical saponification process with design considerations. It was important to me not to drift away from the design aspect, but to bring function, form and presentation into one coherent whole.">Das Projekt bot mir die Möglichkeit, den chemischen Verseifungsprozess mit gestalterischen Überlegungen zu verbinden. Wichtig war mir, nicht vom Designaspekt abzudriften, sondern Funktion, Form und Präsentation in ein stimmiges Gesamtbild zu bringen.</p>
+      <p class="txt-text txt-c-cream" data-en="By precisely weighing the lye and fats and working with the material properties of silicone, I was able to link craft fundamentals with design thinking. Particularly valuable was my dread artist&#x27;s tip to use the &lt;span class=&quot;fl-hl&quot;&gt;felt cover&lt;/span&gt; – which created a functional added value.">Durch das präzise Abwiegen der Lauge und Fette sowie die Materialeigenschaften von Silikon konnte ich handwerkliche Grundlagen mit gestalterischem Denken verknüpfen. Besonders wertvoll war der Hinweis meiner Dreaderin, den <span class="fl-hl">Filzüberzug</span> einzusetzen – dadurch entstand ein funktionaler Mehrwert.</p>
+      <p class="txt-text txt-c-cream" data-en="Setbacks like the model floating up in the silicone or the logo foil not adhering properly made clear how crucial patience, material knowledge and iterative adjustments are.">Rückschläge wie das Aufschwimmen des Abformmodells im Silikon oder das unzureichende Haften der Logo-Folie machten deutlich, wie entscheidend Geduld, Materialkenntnis und iterative Anpassungen sind.</p>
+    </div>
+  </div>
+
+  <!-- Logo-Entwürfe (Galerie wie bei Projekt 01, Bilder stehen in script.js → FL_LOGOS) -->
+  <div class="ku-gallery fl-logo-gallery">
+    <div class="ku-gallery-head">
+      <div>
+        <div class="fl-logos-label txt-c-accent">Branding</div>
+        <div class="fl-logos-title" data-en="Logo drafts">Logo-Entwürfe</div>
+      </div>
+      <div id="fl-counter" class="ku-gallery-counter">1 – 3 / 7</div>
+    </div>
+    <div class="ku-gallery-viewport">
+      <div id="fl-track" class="ku-track"></div>
+      <button onclick="flPrev()" class="ku-gallery-btn ku-gallery-btn-prev">←</button>
+      <button onclick="flNext()" class="ku-gallery-btn ku-gallery-btn-next">→</button>
+    </div>
+  </div>
+
+  <!-- Editorial-Trenner -->
+  <div class="fl-strip">
+    <span class="fl-strip-label txt-c-accent" data-en="PRODUCT">PRODUKT</span>
+    <div class="fl-strip-line"></div>
+    <span class="fl-strip-label txt-c-accent" data-en="HANDMADE">HANDGEMACHT</span>
+  </div>
+
+  <!-- Produkt-Bilder -->
+  <div class="fl-products">
+    <div class="fl-products-a">
+      <img class="fl-products-a-img" src="images/img013.jpg" alt="FeltedLocks Seife">
+    </div>
+    <div class="fl-products-b">
+      <img class="fl-products-b-img" src="images/img014.jpg" alt="FeltedLocks Verpackung">
+    </div>
+  </div>
+
+  <!-- Zitat -->
+  <div class="fl-quote">
+    <p class="fl-quote-text" data-en="Felted Looks – the natural dread soap. Form and care for your dreads.">Felted Looks – the natural dread soap. Form und Pflege für deine Dreads.</p>
+    <div class="fl-quote-meta">
+      <span class="fl-quote-meta-label txt-c-accent" data-en="Recipe">Rezeptur</span>
+      <span class="fl-quote-meta-value" data-en="Coconut · Castor · Olive">Kokosnuss · Rizinus · Olive</span>
+      <span class="fl-quote-meta-value" data-en="Scent: Lavender">Duft: Lavendel</span>
+    </div>
+  </div>
+
+  <!-- Abschließendes Action-Foto -->
+  <div class="fl-action">
+    <img class="fl-action-img" src="images/img015.jpg" alt="FeltedLocks in der Anwendung">
+    <div class="fl-action-fade"></div>
+    <div class="fl-action-caption">
+      <span class="fl-action-caption-label" data-en="Natural Dread Soap — In use">Natural Dread Soap — In der Anwendung</span>
+      <span class="fl-action-caption-note" data-en="Form follows function">Form folgt Funktion</span>
+    </div>
+  </div>
+</template>
+
+
+<!-- ─── PROJEKT 03: QUICK & DIRTY ─── -->
+<template id="overlay-2">
+
+  <!-- Titelbild -->
+  <div class="qd-hero">
+    <img class="qd-hero-img st-euz5t" src="images/DSC04559.jpg" alt="Quick &amp; Dirty Outfit">
+    <div class="qd-hero-shade"></div>
+    <div class="qd-hero-caption">
+      <div>
+        <div class="qd-hero-eyebrow txt-c-muted" data-en="03 — Course Quick &amp; Dirty">03 — Kurs Quick &amp; Dirty</div>
+        <h2 class="qd-hero-title">Quick<br><em>and Dirty</em></h2>
+        <p class="qd-hero-sub" data-en="Fashion made from what we throw away — the disposable glove as a garment.">Mode aus dem, was wir wegwerfen — der Einweghandschuh als Kleidungsstück.</p>
+      </div>
+      <div class="qd-hero-side">
+        <div class="qd-hero-side-line" data-en="Latex · Fabric">Latex · Stoff</div>
+        <div class="qd-hero-side-line2">2025</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Konzept + Eckdaten -->
+  <div class="qd-konzept">
+    <div>
+      <div class="txt-abschnitte txt-c-accent" data-en="Concept">Konzept</div>
+      <p class="qd-konzept-lead" data-en="The project emerged from the course »Quick and Dirty« — a format that gets you working through direct engagement with material. No long conceptual process, no moodboard: letting go and letting the design emerge through pure making. But the free experiment quickly turned into a clear stance.">Das Projekt entstand im Kurs »Quick and Dirty« — einem Format, das über die unmittelbare Auseinandersetzung mit Material ins Arbeiten führt. Kein langer Konzeptprozess, kein Moodboard: loslassen und den Entwurf im reinen Tun entstehen lassen. Doch aus dem freien Experiment wurde schnell eine klare Haltung.</p>
+      <p class="qd-konzept-body txt-c-cream" data-en="The disposable glove — black and white — was painstakingly cut open and glued by hand until a two-piece outfit of top and skirt emerged. Through the overlap and the fingers of the individual gloves, a feather-like, almost organic texture grows. With every layer, the industrial throwaway product moves further from its original purpose.">Der Einweghandschuh — schwarz und weiß — wurde in mühevoller Handarbeit aufgetrennt und verklebt, bis ein zweiteiliges Outfit aus Oberteil und Rock entstand. Durch Überlappung und die Finger der einzelnen Handschuhe wächst eine federartige, fast organische Textur. Mit jeder Lage entfernt sich das industrielle Wegwerfprodukt weiter von seinem ursprünglichen Zweck.</p>
+    </div>
+    <div class="qd-meta">
+      <div class="qd-meta-row">
+        <div class="qd-meta-label txt-c-accent" data-en="Material">Material</div>
+        <div class="qd-meta-value" data-en="Black and white latex gloves">Schwarze und weiße Latexhandschuhe</div>
+      </div>
+      <div class="qd-meta-row">
+        <div class="qd-meta-label txt-c-accent" data-en="Scope">Umfang</div>
+        <div class="qd-meta-value txt-text-klein" data-en="Top + skirt">Oberteil + Rock</div>
+        <div class="qd-meta-note" data-en="Two-piece outfit · Handcraft">Zweiteiliges Outfit · Handarbeit</div>
+      </div>
+      <div class="qd-meta-row">
+        <div class="qd-meta-label txt-c-accent" data-en="Course">Kurs</div>
+        <div class="qd-meta-value">Quick and Dirty</div>
+        <div class="qd-meta-note" data-en="Prof. Christian Schreckenberger">Prof. Christian Schreckenberger</div>
+      </div>
+      <div class="qd-meta-row">
+        <div class="qd-meta-label txt-c-accent" data-en="Exhibition">Ausstellung</div>
+        <div class="qd-meta-value" data-en="Rundgang 2026 · Annual exhibition">Rundgang 2026 · Jahresausstellung</div>
+        <div class="qd-meta-note" data-en="Folkwang University of the Arts">Folkwang Universität der Künste</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Editorial-Reihe (3 Bilder) -->
+  <div class="qd-grid3">
+    <div class="qd-cell3"><img class="qd-img" src="images/img017.jpg" alt="Quick &amp; Dirty Detail 1"></div>
+    <div class="qd-cell3"><img class="qd-img" src="images/img018.jpg" alt="Quick &amp; Dirty Detail 2"></div>
+    <div class="qd-cell3"><img class="qd-img" src="images/img019.jpg" alt="Quick &amp; Dirty Detail 3"></div>
+  </div>
+
+  <!-- Zitat -->
+  <div class="qd-quote">
+    <p class="qd-quote-text" data-en="»The material thinks along —&lt;br&gt;it shows you what it wants.«">»Das Material denkt mit —<br>es zeigt dir, was es will.«</p>
+    <div>
+      <div class="qd-quote-label txt-c-accent" data-en="Materiality">Materialität</div>
+      <div class="qd-quote-value" data-en="Translucency · Elasticity&lt;br&gt;Haptics · Industrial origin&lt;br&gt;Black &amp; white">Transluzenz · Dehnbarkeit<br>Haptik · Industrieller Ursprung<br>Schwarz &amp; Weiß</div>
+    </div>
+  </div>
+
+  <!-- Großes Querformat -->
+  <div class="qd-wide"><img class="qd-img" src="images/img016.jpg" alt="Quick &amp; Dirty Outfit Detail"></div>
+
+  <!-- Hochformat-Reihe (3 Bilder) -->
+  <div class="qd-grid3">
+    <div class="qd-cell3h"><img class="qd-img" src="images/img023.jpg" alt="Quick &amp; Dirty Look 1"></div>
+    <div class="qd-cell3h"><img class="qd-img st-svbhz" src="images/img020.jpg" alt="Quick &amp; Dirty Look 2"></div>
+    <div class="qd-cell3h"><img class="qd-img" src="images/DSC07681.JPG" alt="Quick &amp; Dirty Look 3"></div>
+  </div>
+
+  <!-- Ausstellungsansicht -->
+  <div class="qd-expo">
+    <div class="qd-expo-cell"><img class="qd-img" src="images/DSC07862.JPG" alt="Quick and Dirty Outfit im Studio"></div>
+    <div class="qd-expo-text">
+      <div class="qd-expo-label txt-c-accent" data-en="Exhibition">Ausstellung</div>
+      <p class="qd-expo-lead" data-en="The outfit was shown as part of the annual exhibition — hanging on hangers, accompanied by editorial photos on the wall.">Das Outfit wurde im Rahmen der Jahresausstellung gezeigt — hängend auf Bügeln, begleitet von Editorialfotos an der Wand.</p>
+      <p class="qd-expo-body txt-c-light" data-en="Both pieces were presented separately to make the construction and texture of the gloves visible.">Beide Teile wurden separat präsentiert, um Konstruktion und Textur der Handschuhe sichtbar zu machen.</p>
+    </div>
+  </div>
+
+  <!-- Abschlussbild -->
+  <div class="qd-final">
+    <img class="qd-final-img st-0lwh5" src="images/img024.jpg" alt="Quick &amp; Dirty Abschlussbild">
+    <div class="qd-final-shade"></div>
+    <div class="qd-final-caption">
+      <div class="qd-final-caption-left">Quick &amp; Dirty · 2025</div>
+      <div class="qd-final-caption-right" data-en="Folkwang University of the Arts">Folkwang Universität der Künste</div>
+    </div>
+  </div>
+</template>
+
+
+<!-- ─── PROJEKT 04: FOLKWANG RUNDGANG 2026 ─── -->
+<template id="overlay-3">
+
+  <!-- Titelbild — Foto wird noch kuratiert -->
+  <div class="qd-hero">
+    <img class="qd-hero-img rg-hero-img" src="images/rg-hero-fudk.jpg" alt="Tanzende Person vor der Buehne beim Rundgang 2026">
+    <div class="qd-hero-shade"></div>
+    <div class="qd-hero-caption">
+      <div>
+        <div class="qd-hero-eyebrow txt-c-muted" data-en="04 — Annual Exhibition">04 — Jahresausstellung</div>
+        <h2 class="qd-hero-title">Folkwang<br><em>Rundgang 2026</em></h2>
+        <p class="qd-hero-sub" data-en="Concept · Set-up · Overall coordination — a four-day event with a framework programme built on an open call.">Konzept · Aufbau · Gesamtkoordination — ein viertägiges Event mit einem Rahmenprogramm nach dem Open-Call-Prinzip.</p>
+      </div>
+      <div class="qd-hero-side">
+        <div class="qd-hero-side-line" data-en="Organisation · Event">Organisation · Event</div>
+        <div class="qd-hero-side-line2">2026</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Kontext & Rolle + Eckdaten -->
+  <div class="qd-konzept">
+    <div>
+      <div class="qd-konzept-label txt-c-accent" data-en="Context &amp; Role">Kontext &amp; Rolle</div>
+      <p class="qd-konzept-lead" data-en="I had the honour of shaping the Folkwang Rundgang 2026 — from the idea and the set-up to the overall coordination of the event.">Ich hatte die Ehre, den Rundgang 2026 der Folkwang zu gestalten — von der Idee über den Aufbau bis zur Gesamtkoordination der Veranstaltung.</p>
+      <p class="qd-konzept-body txt-c-cream" data-en="Every year the Folkwang University holds a large, student-organised annual exhibition. This year the dean&#x27;s office supported the event with a major advertising campaign that attracted numerous visitors but also noticeably increased the pressure on the team. My content focus was therefore the framework programme — more than 70 items, built on an open call. To this end I set up cooperations with Campus Werden and the Sound Practice Research Institute.">Die Folkwang Uni veranstaltet jedes Jahr eine große, studentisch organisierte Jahresausstellung. In diesem Jahr unterstützte das Dekanat die Veranstaltung mit einer großen Werbekampagne, die zahlreiche Besucher:innen anlockte, aber auch den Druck auf das Team deutlich erhöhte. Mein inhaltlicher Schwerpunkt lag daher auf dem Rahmenprogramm — mit über 70 Programmpunkten nach dem Open-Call-Prinzip. Dazu baute ich Kooperationen mit Campus Werden und dem Sound Practice Research Institute auf.</p>
+      <p class="qd-konzept-body txt-c-cream" data-en="Coordinating and curating taught me a lot about the structure event planning needs and about communicating with artists as well as with the university&#x27;s internal bureaucracy. Being an approachable point of contact within the teams was central. Planning began at the end of January; the intense phase spanned the final six to eight weeks before the opening on 16 July.">Die Koordination und Kuration lehrte mich viel über die notwendige Struktur von Eventplanung und die Kommunikation mit Künstler:innen wie mit der Uni-internen Bürokratie. Zentral war es, ansprechbare Kommunikationsinstanz innerhalb der Teams zu sein. Die Planung startete Ende Januar, die heiße Phase umfasste die letzten sechs bis acht Wochen vor der Eröffnung am 16. Juli.</p>
+    </div>
+    <div class="qd-meta">
+      <div class="qd-meta-row">
+        <div class="qd-meta-label txt-c-accent" data-en="Role">Rolle</div>
+        <div class="qd-meta-value" data-en="Organisation · Curation · Event design">Organisation · Kuratierung · Eventgestaltung</div>
+        <div class="qd-meta-note" data-en="responsible across all teams &amp; areas">verantwortlich über alle Teams &amp; Bereiche</div>
+      </div>
+      <div class="qd-meta-row">
+        <div class="qd-meta-label txt-c-accent" data-en="Additional role">Zusätzlich</div>
+        <div class="qd-meta-value" data-en="Chair of the student council">Vorsitz Fachschaft</div>
+        <div class="qd-meta-note" data-en="responsible for catering">verantwortlich für Verpflegung</div>
+      </div>
+      <div class="qd-meta-row">
+        <div class="qd-meta-label txt-c-accent" data-en="Timeframe">Zeitraum</div>
+        <div class="qd-meta-value">16.–19. Juli 2026</div>
+        <div class="qd-meta-note" data-en="Planning from end of January · intense phase 6–8 weeks">Planung ab Ende Januar · heiße Phase 6–8 Wochen</div>
+      </div>
+      <div class="qd-meta-row">
+        <div class="qd-meta-label txt-c-accent" data-en="Context">Kontext</div>
+        <div class="qd-meta-value" data-en="Annual exhibition of the Folkwang University">Jahresausstellung der Folkwang Universität</div>
+        <div class="qd-meta-note" data-en="Campus Zollverein, Essen">Campus Zollverein, Essen</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Kooperationen -->
+  <div class="rg-section">
+    <div class="rg-section-label" data-en="Self-initiated cooperations">Selbst aufgebaute Kooperationen</div>
+  </div>
+  <div class="rg-coop">
+    <div class="rg-coop-cell">
+      <div class="rg-coop-kicker txt-c-accent" data-en="Cooperation">Kooperation</div>
+      <div class="rg-coop-name">Campus Werden</div>
+      <p class="rg-coop-text txt-c-cream" data-en="Together with Campus Werden, additional &lt;strong&gt;performances&lt;/strong&gt; and live acts came to the Rundgang — among them the appearance of &lt;strong&gt;Element Delüx&lt;/strong&gt; on Saturday, which got the foyer going before the party.">Gemeinsam mit Campus Werden kamen eigene <strong>Performances</strong> und Live-Acts auf den Rundgang — darunter der Auftritt von <strong>Element Delüx</strong> am Samstag, der das Foyer vor der Party zum Beben brachte.</p>
+      <div class="rg-coop-img"><img class="rg-img" src="images/rg-coop-werden.jpg" alt="Performance auf dem Vorplatz"></div>
+    </div>
+    <div class="rg-coop-cell">
+      <div class="rg-coop-kicker txt-c-accent" data-en="Cooperation">Kooperation</div>
+      <div class="rg-coop-name">Sound Practice Research Institute</div>
+      <p class="rg-coop-text txt-c-cream" data-en="An experimental sound research programme of the Folkwang University. With the &lt;strong&gt;»Fahrschule«&lt;/strong&gt; — an open sound lab in a converted trailer — the SPRI accompanied the entire Rundgang, inviting visitors to join in. At the party they played the &lt;strong&gt;second floor&lt;/strong&gt; all night long.">Ein experimentelles Klangforschungsprogramm der Folkwang. Mit der <strong>»Fahrschule«</strong> — einem Open Sound Lab in einem umgebauten Anhänger — begleitete das SPRI den gesamten Rundgang zum Mitmachen. Auf der Party bespielten sie die ganze Nacht den <strong>Second Floor</strong>.</p>
+      <div class="rg-coop-img"><img class="rg-img" src="images/rg-coop-spri.jpg" alt="Fahrschule: DJ-Pult und Klanglabor im Anhaenger"></div>
+    </div>
+  </div>
+
+  <div class="rg-strip">
+    <span class="rg-strip-label" data-en="The opening">Die Eröffnung</span>
+    <div class="rg-strip-line"></div>
+    <span class="rg-strip-sub" data-en="16 July, 7 p.m. · foyer">16. Juli, 19 Uhr · Foyer</span>
+  </div>
+  <div class="rg-full"><img class="rg-img" src="images/rg-24-eroeffnung.jpg" alt="Eroeffnung im Foyer"></div>
+  <div class="rg-cap" data-en="After months of planning: the opening in the foyer — speeches, reunions and sunflowers for everyone who had helped build it.">Nach Monaten der Planung: die Eröffnung im Foyer — Reden, Wiedersehen und Sonnenblumen für alle, die mitgebaut haben.</div>
+  <div class="rg-full"><img class="rg-img" src="images/rg-23-sonnenblumen.jpg" alt="Sonnenblumen bei der Eroeffnung"></div>
+
+  <!-- Organisationsstruktur -->
+  <div class="rg-section">
+    <div class="rg-section-label" data-en="Team structure">Organisationsstruktur</div>
+    <div class="rg-role">
+      <div class="rg-role-kicker" data-en="Overall coordination — Lilly Beilmann">Gesamtkoordination — Lilly Beilmann</div>
+      <div class="rg-role-title" data-en="One head across eight teams">Ein Kopf über acht Teams</div>
+      <p class="rg-role-text" data-en="I initiated the event, formed the teams and was responsible for the organisational involvement in every area — from concept and set-up through the coordination of the groups to the execution on site. Hands-on, my focus was the framework programme and catering.">Ich habe das Event initiiert, die Teams gebildet und die organisatorische Beteiligung in allen Bereichen verantwortet — von Konzept und Aufbau über die Koordination der Gruppen bis zur Durchführung vor Ort. Hands-on lag mein Schwerpunkt auf Rahmenprogramm und Verpflegung.</p>
+    </div>
+    <div class="rg-teamnote" data-en="The eight teams — built up &amp; coordinated by me · highlighted: the teams I also worked in myself">Die acht Teams — von mir aufgebaut &amp; koordiniert · hervorgehoben: die Teams, in denen ich zusätzlich selbst mitgearbeitet habe</div>
+    <div class="rg-teams">
+      <div class="rg-team"><div class="rg-team-name">CI-Team</div><div class="rg-team-role" data-en="Visual identity">Erscheinungsbild</div></div>
+      <div class="rg-team"><div class="rg-team-name">Raumplanung</div><div class="rg-team-role" data-en="Spaces &amp; build-up">Räume &amp; Aufbau</div></div>
+      <div class="rg-team is-mine"><div class="rg-team-name">Rahmenprogramm</div><div class="rg-team-role" data-en="My focus">Mein Schwerpunkt</div></div>
+      <div class="rg-team"><div class="rg-team-name">Technik</div><div class="rg-team-role" data-en="Sound &amp; light">Ton &amp; Licht</div></div>
+      <div class="rg-team is-mine"><div class="rg-team-name">Bar</div><div class="rg-team-role" data-en="Service · hands-on">Ausschank · operativ dabei</div></div>
+      <div class="rg-team is-mine"><div class="rg-team-name">Verpflegung</div><div class="rg-team-role" data-en="Student council · my chair">Fachschaft · mein Vorsitz</div></div>
+      <div class="rg-team is-mine"><div class="rg-team-name">Party-Team</div><div class="rg-team-role" data-en="Student party · hands-on">Studi-Party · operativ dabei</div></div>
+      <div class="rg-team"><div class="rg-team-name">Werksverkauf</div><div class="rg-team-role" data-en="Sale">Verkauf</div></div>
+    </div>
+  </div>
+  <div class="rg-duo">
+    <div><img class="rg-img" src="images/rg-19-getraenke.jpg" alt="Getraenkelager vor dem Rundgang"></div>
+    <div><img class="rg-img" src="images/rg-20-team.jpg" alt="Das Team am Abend"></div>
+  </div>
+  <div class="rg-cap" data-en="Behind the eight teams are people: weeks of preparation, crates of drinks — and the evenings when it all came together.">Hinter den acht Teams stehen Menschen: wochenlange Vorbereitung, Getränkelager — und die Abende, an denen alles zusammenkam.</div>
+
+  <div class="rg-strip">
+    <span class="rg-strip-label" data-en="On site">Vor Ort</span>
+    <div class="rg-strip-line"></div>
+    <span class="rg-strip-sub" data-en="Catering · campus life">Verpflegung · Campusleben</span>
+  </div>
+  <div class="rg-g3">
+    <div><img class="rg-img" src="images/rg-10-verpflegung.jpg" alt="Verpflegungsstand im Foyer"></div>
+    <div><img class="rg-img" src="images/rg-25-pizza.jpg" alt="Fachschafts-Pizza vor dem Gebaeude"></div>
+    <div><img class="rg-img" src="images/rg-15-picknick.jpg" alt="Besucher:innen an langen Tischen im Freien"></div>
+  </div>
+  <div class="rg-cap" data-en="Catering in the foyer, the student council's pizza outside and long tables in the evening sun — the part I was responsible for via the Fachschaft.">Verpflegung im Foyer, die Fachschafts-Pizza draußen und lange Tische in der Abendsonne — der Teil, den ich über die Fachschaft verantwortet habe.</div>
+
+  <!-- Rahmenprogramm · Open Call -->
+  <div class="rg-section" style="padding-top:0">
+    <div class="rg-section-label txt-c-accent" data-en="Framework programme · Open Call">Rahmenprogramm · Open Call</div>
+    <p class="rg-section-lead" data-en="Over 70 programme items — created through the enthusiasm of fellow students.">Über 70 Programmpunkte — entstanden durch die Begeisterung der Mitstudent:innen.</p>
+    <p class="rg-section-body txt-c-cream" data-en="Students, institutes and partners could submit contributions. From the submissions I curated and structured a coherent programme across several venues and formats — from the call and the coordination of contributors to scheduling and on-site logistics.">Studierende, Institute und Partner konnten Beiträge einreichen. Aus den Einreichungen kuratierte und strukturierte ich ein stimmiges Programm über mehrere Orte und Formate hinweg — von der Ausschreibung über die Koordination der Beitragenden bis zu Ablaufplanung und Logistik vor Ort.</p>
+    <div class="rg-chips">
+      <span class="rg-chip" data-en="Concerts">Konzerte</span>
+      <span class="rg-chip">DJ-Sets</span>
+      <span class="rg-chip">Performances</span>
+      <span class="rg-chip" data-en="Dance">Tanz</span>
+      <span class="rg-chip" data-en="Baroque cello">Barockcello</span>
+      <span class="rg-chip">Singer-Songwriter</span>
+      <span class="rg-chip" data-en="Readings">Lesungen</span>
+      <span class="rg-chip">Workshops</span>
+      <span class="rg-chip" data-en="VR &amp; video game">VR &amp; Videogame</span>
+      <span class="rg-chip">Karaoke</span>
+      <span class="rg-chip" data-en="Saxophone &amp; visuals">Saxophon &amp; Visuals</span>
+      <span class="rg-chip">Café</span>
+      <span class="rg-chip" data-en="Barbecue">Grillen</span>
+      <span class="rg-chip" data-en="Party">Party</span>
+      <span class="rg-chip" data-en="Guided tours">Führungen</span>
+      <span class="rg-chip" data-en="Walking acts">Walking Acts</span>
+      <span class="rg-chip" data-en="Alumni talks">Alumni-Talks</span>
+    </div>
+    <div class="rg-embed">
+      <div class="rg-embed-bar">rundgang.folkwang-uni.de</div>
+      <div class="consent-embed" data-provider="Folkwang"><iframe class="rg-embed-frame" data-src="https://rundgang.folkwang-uni.de/" loading="lazy" title="Rundgang Programm"></iframe><div class="consent-ph"><div class="consent-ph-label">Folkwang</div><p class="consent-ph-text" data-en="This content is provided by Folkwang University of the Arts (rundgang.folkwang-uni.de). Loading it transfers data such as your IP address to the provider. More in the &lt;a href=&quot;datenschutz.html&quot; target=&quot;_blank&quot;&gt;privacy policy&lt;/a&gt;.">Dieser Inhalt wird von der Folkwang Universität der Künste (rundgang.folkwang-uni.de) bereitgestellt. Beim Laden werden Daten wie deine IP-Adresse an den Anbieter übertragen. Mehr dazu in der <a href="datenschutz.html" target="_blank">Datenschutzerklärung</a>.</p><button type="button" class="consent-load" data-en="Load content">Inhalt laden</button></div></div>
+    </div>
+    <a class="rg-btn" href="https://rundgang.folkwang-uni.de/" target="_blank" rel="noopener" data-en="To the full programme →">Zum vollständigen Programm →</a>
+  </div>
+
+  <div class="rg-strip">
+    <span class="rg-strip-label" data-en="Live acts">Live-Acts</span>
+    <div class="rg-strip-line"></div>
+    <span class="rg-strip-sub" data-en="Concerts · stage 1 &amp; 2 · outdoors">Konzerte · Bühne 1 &amp; 2 · draußen</span>
+  </div>
+  <div class="rg-duo">
+    <div><img class="rg-img" src="images/rg-01-band.jpg" alt="Band beim Auftritt"></div>
+    <div><img class="rg-img" src="images/rg-02-songwriter.jpg" alt="Singer-Songwriter"></div>
+  </div>
+  <div class="rg-cap" data-en="From punk to singer-songwriter — the range of the open call across two stages.">Von Punk bis Singer-Songwriter — die Bandbreite des Open Calls auf zwei Bühnen.</div>
+  <div class="rg-full"><img class="rg-img" src="images/rg-hero-band.jpg" alt="Grosse Band im Foyer"></div>
+  <div class="rg-cap" data-en="Element Delüx in the foyer — pop, rock and funk by students and alumni, in cooperation with Campus Werden.">Element Delüx im Foyer — Pop, Rock und Funk von Studierenden und Absolvent:innen, in Kooperation mit Campus Werden.</div>
+  <div class="rg-tri">
+    <div><img class="rg-img" src="images/rg-04-gitarre.jpg" alt="Gitarrist beim Auftritt"></div>
+    <div><img class="rg-img" src="images/rg-05-cello.jpg" alt="Cellistin beim Auftritt"></div>
+    <div><img class="rg-img" src="images/rg-22-baellebad-act.jpg" alt="Auftritt im Baellebad"></div>
+  </div>
+  <div class="rg-cap" data-en="Between baroque cello and a gig in the ball pit — the open call brought together what wouldn't usually share a stage.">Zwischen Barockcello und Auftritt im Bällebad — der Open Call brachte zusammen, was sonst selten auf einer Bühne steht.</div>
+
+  <div class="rg-strip">
+    <span class="rg-strip-label" data-en="Ball pit">Bällebad</span>
+    <div class="rg-strip-line"></div>
+    <span class="rg-strip-sub" data-en="From a side note to the main attraction">Aus einer Nebenidee wurde die Hauptattraktion</span>
+  </div>
+  <div class="rg-full"><img class="rg-img" src="images/rg-21-baellebad.jpg" alt="Baellebad mit Besucher:innen"></div>
+  <div class="rg-cap" data-en="The ball pit was planned as a small idea — and became one of the most popular spots of the whole Rundgang: a stage, a lounge and a photo backdrop all at once.">Als kleine Idee geplant, wurde das Bällebad zu einem der beliebtesten Orte des ganzen Rundgangs — Bühne, Lounge und Fotokulisse in einem.</div>
+  <div class="rg-strip">
+    <span class="rg-strip-label" data-en="Performances">Performances</span>
+    <div class="rg-strip-line"></div>
+    <span class="rg-strip-sub" data-en="Dance · theatre · installation">Tanz · Theater · Installation</span>
+  </div>
+  <div class="rg-duo">
+    <div><img class="rg-img" src="images/rg-07-textil.jpg" alt="Textil-Performance am Kleiderschrank"></div>
+    <div><img class="rg-img" src="images/rg-08-gruppe.jpg" alt="Performance-Gruppe im Foyer"></div>
+  </div>
+  <div class="rg-cap" data-en="Poetic dance and object performances, spread across the rooms and corridors of the faculty.">Poetische Tanz- und Objektperformances, verteilt über Räume und Flure des Fachbereichs.</div>
+  <div class="rg-full"><img class="rg-img" src="images/rg-06-tuell.jpg" alt="Performance mit Tuell"></div>
+  <div class="rg-cap" data-en="»Chemical Journey« and other long-durational performances ran for hours — visitors came and went.">»Chemical Journey« und andere Langzeit-Performances liefen über Stunden — Besucher:innen kamen und gingen.</div>
+
+  <div class="rg-quote">
+    <p class="rg-quote-text" data-en="»A programme that emerges together and lives through participation.«">»Ein Programm, das gemeinsam entsteht und durch die Mitgestaltung lebt.«</p>
+    
+  </div>
+
+
+  <div class="rg-strip">
+    <span class="rg-strip-label" data-en="Bar &amp; night">Bar &amp; Nacht</span>
+    <div class="rg-strip-line"></div>
+    <span class="rg-strip-sub" data-en="Student party · DJ sets · until 6 a.m.">Studi-Party · DJ-Sets · bis 6 Uhr</span>
+  </div>
+  <div class="rg-full rg-full-560"><img class="rg-img" src="images/rg-12-bar-oben.jpg" alt="Bar von oben"></div>
+  <div class="rg-cap" data-en="The Rundgang bar, built and painted by students themselves — the meeting point on all four days.">Die Rundgang-Bar, von Studierenden selbst gebaut und bemalt — Anlaufpunkt an allen vier Tagen.</div>
+  <div class="rg-duo">
+    <div><img class="rg-img" src="images/rg-17-rotes-sofa.jpg" alt="Rotes Sofa vor dem Gebaeude"></div>
+    <div><img class="rg-img" src="images/rg-18-flur.jpg" alt="Besucher:innen im Flur"></div>
+  </div>
+  <div class="rg-cap" data-en="Between programme items: breaks, reunions and spontaneous scenes across the campus.">Zwischen den Programmpunkten: Pausen, Wiedersehen und spontane Szenen auf dem Campus.</div>
+
+
+  <!-- Instagram -->
+  <div class="rg-section">
+    <div class="rg-section-label txt-c-accent">Instagram</div>
+    <p class="rg-section-lead" data-en="Accompanied live on @folkwang_rundgang">Live begleitet auf @folkwang_rundgang</p>
+    <div class="rg-reels">
+      <div class="rg-reel"><div class="consent-embed" data-provider="Instagram"><iframe data-src="https://www.instagram.com/reel/DbV51mkOuAU/embed" loading="lazy" allowtransparency="true" title="Rundgang Reel 1"></iframe><div class="consent-ph"><div class="consent-ph-label">Instagram</div><p class="consent-ph-text" data-en="Post from Instagram. Loading it sends data such as your IP address to Meta. &lt;a href=&quot;datenschutz.html&quot; target=&quot;_blank&quot;&gt;Privacy&lt;/a&gt;">Beitrag von Instagram. Beim Laden gehen Daten wie deine IP-Adresse an Meta. <a href="datenschutz.html" target="_blank">Datenschutz</a></p><button type="button" class="consent-load" data-en="Load content">Inhalt laden</button></div></div></div>
+      <div class="rg-reel"><div class="consent-embed" data-provider="Instagram"><iframe data-src="https://www.instagram.com/reel/Da-CdiSgVcY/embed" loading="lazy" allowtransparency="true" title="Rundgang Reel 2"></iframe><div class="consent-ph"><div class="consent-ph-label">Instagram</div><p class="consent-ph-text" data-en="Post from Instagram. Loading it sends data such as your IP address to Meta. &lt;a href=&quot;datenschutz.html&quot; target=&quot;_blank&quot;&gt;Privacy&lt;/a&gt;">Beitrag von Instagram. Beim Laden gehen Daten wie deine IP-Adresse an Meta. <a href="datenschutz.html" target="_blank">Datenschutz</a></p><button type="button" class="consent-load" data-en="Load content">Inhalt laden</button></div></div></div>
+      <div class="rg-reel"><div class="consent-embed" data-provider="Instagram"><iframe data-src="https://www.instagram.com/p/DY9Y8p_Dq7t/embed" loading="lazy" allowtransparency="true" title="Rundgang Beitrag 3"></iframe><div class="consent-ph"><div class="consent-ph-label">Instagram</div><p class="consent-ph-text" data-en="Post from Instagram. Loading it sends data such as your IP address to Meta. &lt;a href=&quot;datenschutz.html&quot; target=&quot;_blank&quot;&gt;Privacy&lt;/a&gt;">Beitrag von Instagram. Beim Laden gehen Daten wie deine IP-Adresse an Meta. <a href="datenschutz.html" target="_blank">Datenschutz</a></p><button type="button" class="consent-load" data-en="Load content">Inhalt laden</button></div></div></div>
+      <div class="rg-reel"><div class="consent-embed" data-provider="Instagram"><iframe data-src="https://www.instagram.com/p/Db_C4uBjZ0B/embed" loading="lazy" allowtransparency="true" title="Rundgang Beitrag 4"></iframe><div class="consent-ph"><div class="consent-ph-label">Instagram</div><p class="consent-ph-text" data-en="Post from Instagram. Loading it sends data such as your IP address to Meta. &lt;a href=&quot;datenschutz.html&quot; target=&quot;_blank&quot;&gt;Privacy&lt;/a&gt;">Beitrag von Instagram. Beim Laden gehen Daten wie deine IP-Adresse an Meta. <a href="datenschutz.html" target="_blank">Datenschutz</a></p><button type="button" class="consent-load" data-en="Load content">Inhalt laden</button></div></div></div>
+    </div>
+    <a class="rg-btn" href="https://www.instagram.com/folkwang_rundgang/" target="_blank" rel="noopener" data-en="Follow on Instagram →">Auf Instagram folgen →</a>
+  </div>
+
+  <!-- Abschlussbild -->
+  <div class="rg-final">
+    <img class="rg-img" src="images/rg-26-eingang.jpg" alt="Besucher:innen vor dem Haupteingang der Folkwang Universitaet" style="position:absolute;inset:0">
+  </div>
+</template>
+
+<script src="script.js"></script></body></html>
